@@ -1,24 +1,40 @@
+import {  Github, Instagram, Linkedin, MoveDown } from "lucide-react";
+
 export default function HeroSection() {
   return (
-    <section className="h-screen flex flex-col items-center justify-center text-center bg-[#121729] text-white px-6">
-      <div className="max-w-3xl">
-        {/* Foto */}
-        <img 
-          src="/profile.jpg" 
-          alt="Profile Picture" 
-          className="w-40 h-40 rounded-full mx-auto mb-6 border-4 border-blue-600"
+    <section
+      className="relative py-20 text-white text-center flex flex-col items-center justify-center bg-[#0E1222]"
+      style={{
+        backgroundImage: "url('/bgHeroSection.svg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      <div className="max-w-4xl mx-auto flex flex-col items-center py-28">
+        <img
+          src="/profile.jpg"
+          alt="Profile"
+          className="w-32 h-32 rounded-full border-4 border-white shadow-lg mb-4"
         />
-        
-        {/* Nama dan Deskripsi */}
-        <h1 className="text-4xl font-bold">John Doe</h1>
-        <p className="text-lg text-gray-400 mt-3">Full Stack Developer | JavaScript Enthusiast</p>
-        
-        {/* Sosial Media */}
-        <div className="flex space-x-4 mt-6 justify-center">
-          <a href="#" className="text-blue-500 hover:text-blue-400">Twitter</a>
-          <a href="#" className="text-blue-500 hover:text-blue-400">LinkedIn</a>
-          <a href="#" className="text-blue-500 hover:text-blue-400">GitHub</a>
+        <h1 className="text-5xl font-bold mb-2">I am [Your Name]</h1>
+        <p className="text-lg text-gray-300 max-w-2xl mx-auto mb-4">
+          Passionate Web Developer | Building Modern & Scalable Solutions
+        </p>
+        <div className="flex space-x-4 mb-6">
+          <a href="#" className="text-gray-400 hover:text-white text-2xl">
+            <Linkedin />
+          </a>
+          <a href="#" className="text-gray-400 hover:text-white text-2xl">
+          <Instagram />
+          </a>
+          <a href="#" className="text-gray-400 hover:text-white text-2xl">
+          <Github />
+          </a>
         </div>
+      </div>
+      <div className=" bottom-10 flex items-center gap-2">
+        <MoveDown className="animate-bounce h-5 text-gray-400"/>
+        <p className="text-gray-400">Scroll Down</p>
       </div>
     </section>
   );
