@@ -41,9 +41,7 @@ export default function HeroSection() {
           </span>
         </div>
         <p className="mx-5 mb-4 max-w-xl text-lg text-gray-400">
-          I am a Full-Stack web developer. I can provide clean code and pixel
-          perfect design. I also make website more & more interactive with web
-          animations.
+          I am a Full-Stack web developer. I can provide clean code and pixel perfect design. I also make website more & more interactive with web animations.
         </p>
         <div className="mt-3 flex space-x-4">
           <a
