@@ -49,7 +49,7 @@ export default function HeroSection() {
             className="group relative inline-block h-10 w-10 overflow-hidden rounded border border-white/10 text-lg"
           >
             {/* Ikon Awal */}
-            <span className="front absolute inset-0 flex items-center justify-center bg-gray-700 text-white transition-all duration-500 group-hover:-translate-y-full">
+            <span className="front absolute inset-0 flex items-center justify-center bg-[#060A15] text-gray-500 transition-all duration-500 group-hover:-translate-y-full">
               <Facebook className="h-5 w-5" />
             </span>
 
@@ -63,7 +63,7 @@ export default function HeroSection() {
             className="group relative inline-block h-10 w-10 overflow-hidden rounded border border-white/10 text-lg"
           >
             {/* Ikon Awal */}
-            <span className="front absolute inset-0 flex items-center justify-center bg-gray-700 text-white transition-all duration-500 group-hover:-translate-y-full">
+            <span className="front absolute inset-0 flex items-center justify-center bg-[#060A15] text-gray-500 transition-all duration-500 group-hover:-translate-y-full">
               <Instagram className="h-5 w-5" />
             </span>
 
@@ -77,7 +77,7 @@ export default function HeroSection() {
             className="group relative inline-block h-10 w-10 overflow-hidden rounded border border-white/10 text-lg"
           >
             {/* Ikon Awal */}
-            <span className="front absolute inset-0 flex items-center justify-center bg-gray-700 text-white transition-all duration-500 group-hover:-translate-y-full">
+            <span className="front absolute inset-0 flex items-center justify-center bg-[#060A15] text-gray-500 transition-all duration-500 group-hover:-translate-y-full">
               <Github className="h-5 w-5" />
             </span>
 
@@ -91,7 +91,7 @@ export default function HeroSection() {
             className="group relative inline-block h-10 w-10 overflow-hidden rounded border border-white/10 text-lg"
           >
             {/* Ikon Awal */}
-            <span className="front absolute inset-0 flex items-center justify-center bg-gray-700 text-white transition-all duration-500 group-hover:-translate-y-full">
+            <span className="front absolute inset-0 flex items-center justify-center bg-[#060A15] text-gray-500 transition-all duration-500 group-hover:-translate-y-full">
               <Linkedin className="h-5 w-5" />
             </span>
 
