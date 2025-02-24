@@ -5,14 +5,14 @@ import { Typewriter } from "react-simple-typewriter";
 export default function HeroSection() {
   return (
     <section
-      className="relative flex h-screen flex-col items-center justify-center bg-[#060A15] text-center"
+      className="hero-section relative flex h-screen flex-col items-center justify-center bg-[#0B1224] text-center"
       style={{
         backgroundImage: "url('/line.svg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
-      <div className="mx-auto flex max-w-4xl flex-col items-center pt-40 pb-28">
+      <div className="mx-auto flex max-w-4xl flex-col items-center pb-28 pt-40">
         <div className="relative mb-10 flex items-center justify-center">
           {/* Border Berputar */}
           <span className="absolute h-[156px] w-[156px] animate-spin rounded-full bg-gradient-to-tr from-[#72E2AE] to-transparent sm:h-[166px] sm:w-[166px]"></span>
@@ -41,7 +41,9 @@ export default function HeroSection() {
           </span>
         </div>
         <p className="mx-5 mb-4 max-w-xl text-lg text-gray-400">
-          I am a Full-Stack web developer. I can provide clean code and pixel perfect design. I also make website more & more interactive with web animations.
+          I am a Full-Stack web developer. I can provide clean code and pixel
+          perfect design. I also make website more & more interactive with web
+          animations.
         </p>
         <div className="mt-3 flex space-x-4">
           <a
@@ -103,7 +105,7 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className="bottom-10 flex items-center gap-2">
+      <div className="absolute bottom-10 flex items-center gap-2">
         <ArrowDown className="h-4 animate-bounce text-gray-400" />
         <p className="text-xs font-semibold text-gray-400">SCROLL DOWN</p>
       </div>

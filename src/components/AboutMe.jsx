@@ -4,7 +4,11 @@ import { motion } from "framer-motion";
 
 export default function AboutMe() {
   return (
-    <section className="about-section container mx-auto lg:pt-24 xl:pt-32">
+    <section className="about-section container mx-auto lg:pt-24 xl:pt-32" style={{
+      backgroundImage: "url('/lineo.svg')",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+    }}>
       <div className="text-center text-3xl font-bold">
         <h1>ABOUT ME</h1>
       </div>
@@ -32,7 +36,6 @@ export default function AboutMe() {
                 />
               ))}
             </div>
-
             {/* Gambar */}
             <img
               src="/about.jpeg"
