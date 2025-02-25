@@ -19,7 +19,19 @@ export default function MyServices() {
       <Container>
         <div className="mx-auto">
           <div className="relative mb-14 overflow-hidden">
-            <h2 className="mb-6 text-center text-5xl font-bold">My Services</h2>
+            <h2 className="mb-5 text-center text-5xl font-bold">My Services</h2>
+            <div className="relative mx-auto h-[6px] w-32 overflow-hidden rounded-full bg-[#72E2AE]/30">
+              <motion.div
+                className="absolute left-0 top-0 h-[6px] w-[6px] rounded-full bg-[#72E2AE]"
+                animate={{ x: ["-1vw", "16vw"] }} // Geser lebih jauh
+                transition={{
+                  duration: 4,
+                  repeat: Infinity,
+                  ease: "linear",
+                }}
+              />
+            </div>
+
             <MovingText what="SERVICES" />
           </div>
 
