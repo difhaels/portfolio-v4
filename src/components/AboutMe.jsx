@@ -80,7 +80,7 @@ export default function AboutMe() {
                 <strong className="inline-block min-w-[120px] font-medium">
                   Languages
                 </strong>
-                : Indonesian, English
+                : Indonesian, English, Russian
               </li>
               <li className="text-lg">
                 <strong className="inline-block min-w-[120px] font-medium">
