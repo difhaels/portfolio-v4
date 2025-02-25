@@ -1,29 +1,108 @@
+"use client";
+import { Brush, CodeXml, Wrench } from "lucide-react";
+import Container from "./Container";
+import MovingText from "./MovingText";
+import { motion } from "framer-motion";
+
 export default function MyServices() {
   return (
-    <section className="py-20 bg-[#1A1F2B] text-white px-6">
-      <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-6">My Services</h2>
-        <p className="text-gray-400 text-lg leading-relaxed mb-10">
-          Here are the services I offer to help bring your ideas to life.
-        </p>
-        
-        <div className="grid md:grid-cols-3 gap-6">
-          <div className="bg-[#121729] p-6 rounded-lg shadow-lg">
-            <h3 className="text-xl font-semibold mb-2">Web Development</h3>
-            <p className="text-gray-400 text-sm">Building modern and responsive web applications using the latest technologies.</p>
+    <section
+      className="works-section mx-auto bg-[#0F172A] py-10 text-white"
+      style={{
+        backgroundImage: "url('/lineo.svg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        backgroundAttachment: "fixed", // Supaya gambar tetap di posisi yang sama
+      }}
+    >
+      <Container>
+        <div className="mx-auto">
+          <div className="relative mb-14 overflow-hidden">
+            <h2 className="mb-6 text-center text-5xl font-bold">My Services</h2>
+            <MovingText what="SERVICES" />
           </div>
-          
-          <div className="bg-[#121729] p-6 rounded-lg shadow-lg">
-            <h3 className="text-xl font-semibold mb-2">UI/UX Design</h3>
-            <p className="text-gray-400 text-sm">Designing intuitive and engaging user interfaces for a seamless experience.</p>
-          </div>
-          
-          <div className="bg-[#121729] p-6 rounded-lg shadow-lg">
-            <h3 className="text-xl font-semibold mb-2">SEO Optimization</h3>
-            <p className="text-gray-400 text-sm">Improving website visibility and ranking on search engines.</p>
+
+          <div className="grid gap-6 md:grid-cols-3">
+            <motion.div
+              className="rounded-lg border-2 border-[#72E2AE] bg-[#162033] p-6"
+              animate={{
+                boxShadow: ["0px 0px 1px #72E2AE", "0px 0px 10px #72E2AE"],
+              }}
+              transition={{
+                duration: 1,
+                repeat: Infinity,
+                repeatType: "reverse",
+              }}
+            >
+              <div className="flex items-start justify-between pb-7">
+                <div className="rounded-full bg-[#72E2AE] bg-opacity-20 p-4">
+                  <CodeXml className="h-8 w-8 text-[#72E2AE]" />
+                </div>
+                <span className="text-5xl font-bold opacity-25">01</span>
+              </div>
+              <h3 className="mb-2 text-xl font-semibold">Web Development</h3>
+              <p className="text-md text-gray-400">
+                I can code you the website you have always dreamed of. With my
+                Front End and Back End development skills, I can deliver you a
+                fully working and up-to-speed website that is fully functional
+                and lightning fast.
+              </p>
+            </motion.div>
+
+            <motion.div
+              className="rounded-lg border-2 border-[#72E2AE] bg-[#162033] p-6"
+              animate={{
+                boxShadow: ["0px 0px 1px #72E2AE", "0px 0px 10px #72E2AE"],
+              }}
+              transition={{
+                duration: 1,
+                repeat: Infinity,
+                repeatType: "reverse",
+              }}
+            >
+              <div className="flex items-start justify-between pb-7">
+                <div className="rounded-full bg-[#72E2AE] bg-opacity-20 p-4">
+                  <Brush className="h-8 w-8 text-[#72E2AE]" />
+                </div>
+                <span className="text-5xl font-bold opacity-25">02</span>
+              </div>
+              <h3 className="mb-2 text-xl font-semibold">Ui/Ux Design</h3>
+              <p className="text-md text-gray-400">
+                I can deliver you stunning User Interfaces that will captivate
+                your customer's attention and the best possible User experience
+                with smooth animations and design & color combinations that are
+                up to trend.
+              </p>
+            </motion.div>
+
+            <motion.div
+              className="rounded-lg border-2 border-[#72E2AE] bg-[#162033] p-6"
+              animate={{
+                boxShadow: ["0px 0px 1px #72E2AE", "0px 0px 10px #72E2AE"],
+              }}
+              transition={{
+                duration: 1,
+                repeat: Infinity,
+                repeatType: "reverse",
+              }}
+            >
+              <div className="flex items-start justify-between pb-7">
+                <div className="rounded-full bg-[#72E2AE] bg-opacity-20 p-4">
+                  <Wrench  className="h-8 w-8 text-[#72E2AE]" />
+                </div>
+                <span className="text-5xl font-bold opacity-25">03</span>
+              </div>
+              <h3 className="mb-2 text-xl font-semibold">IT Support</h3>
+              <p className="text-md text-gray-400">
+                I can assist you with troubleshooting and optimizing your
+                computer systems. Whether it’s software installation,
+                performance improvement, or resolving technical issues.
+              </p>
+            </motion.div>
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   );
 }
