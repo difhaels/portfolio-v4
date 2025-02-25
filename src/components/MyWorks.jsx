@@ -3,7 +3,7 @@ import MovingText from "@/components/MovingText";
 export default function MyWorks() {
   return (
     <section
-      className="works-section container mx-auto px-6 py-20 text-white"
+      className="works-section container mx-auto py-10 text-white bg-[#0F172A]"
       style={{
         backgroundImage: "url('/lineo.svg')",
         backgroundSize: "cover",

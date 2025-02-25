@@ -6,21 +6,21 @@ import MovingText from "./MovingText";
 export default function AboutMe() {
   return (
     <section
-      className="about-section container mx-auto lg:pt-24 xl:pt-32"
+      className="about-section container mx-auto lg:pt-24 xl:pt-32 "
       style={{
         backgroundImage: "url('/lineo.svg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
-      <div className="relative mb-14 overflow-hidden">
+      <div className="relative overflow-hidden">
         <h2 className="mb-6 text-5xl font-bold text-center">About Me</h2>
         <MovingText what="ABOUT" />
       </div>
       <div className="grid grid-cols-2 items-center justify-center gap-10 pb-20 pt-14">
         {/* Bagian Gambar */}
         <div className="col-span-2 flex justify-center lg:col-span-1 lg:justify-end">
-          <div className="relative max-w-[400px] overflow-hidden rounded-md border border-[#72E2AE] shadow-[0_0_15px_#72E2AE] sm:max-w-[450px]">
+          <div className="relative max-w-[340px] overflow-hidden rounded-md border border-[#72E2AE] shadow-[0_0_15px_#72E2AE] sm:max-w-[450px]">
             {/* Efek api di bawah */}
             <div className="absolute -bottom-6 left-1/2 flex -translate-x-1/2 gap-1">
               {[...Array(10)].map((_, i) => (
