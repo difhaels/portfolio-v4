@@ -1,5 +1,5 @@
 import { Image, SquareArrowOutUpRight } from "lucide-react";
-
+import MovingText from "@/components/MovingText";
 export default function MyWorks() {
   return (
     <section
@@ -11,11 +11,10 @@ export default function MyWorks() {
       }}
     >
       <div className="mx-auto max-w-6xl text-center">
-        <h2 className="mb-6 text-3xl font-bold">My Works</h2>
-        <p className="mb-10 text-lg leading-relaxed text-gray-400">
-          Here are some of the projects I have worked on, showcasing my skills
-          in web development.
-        </p>
+        <div className="relative mb-14 overflow-hidden">
+          <h2 className="mb-6 text-5xl font-bold">My Works</h2>
+          <MovingText what="WORKS" />
+        </div>
 
         <div className="grid gap-6 md:grid-cols-3">
           <div className="group rounded-lg bg-[#162033] p-5 shadow-lg">
