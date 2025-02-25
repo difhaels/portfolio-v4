@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 export default function MyServices() {
   return (
     <section
-      className="works-section mx-auto bg-[#0F172A] py-10 text-white"
+      className="service-section mx-auto bg-[#0F172A] py-10 text-white"
       style={{
         backgroundImage: "url('/lineo.svg')",
         backgroundSize: "cover",
@@ -25,7 +25,7 @@ export default function MyServices() {
 
           <div className="grid gap-6 md:grid-cols-3">
             <motion.div
-              className="rounded-lg border-2 border-[#72E2AE] bg-[#162033] p-6"
+              className="rounded-lg border-2 border-[#72E2AE] bg-[#162033] p-6 transition duration-300 ease-in-out hover:-translate-y-2 hover:scale-105 hover:shadow-[0_0_20px_#72E2AE]"
               animate={{
                 boxShadow: ["0px 0px 1px #72E2AE", "0px 0px 10px #72E2AE"],
               }}
@@ -51,7 +51,7 @@ export default function MyServices() {
             </motion.div>
 
             <motion.div
-              className="rounded-lg border-2 border-[#72E2AE] bg-[#162033] p-6"
+              className="rounded-lg border-2 border-[#72E2AE] bg-[#162033] p-6 transition duration-300 ease-in-out hover:-translate-y-2 hover:scale-105 hover:shadow-[0_0_20px_#72E2AE]"
               animate={{
                 boxShadow: ["0px 0px 1px #72E2AE", "0px 0px 10px #72E2AE"],
               }}
@@ -77,7 +77,7 @@ export default function MyServices() {
             </motion.div>
 
             <motion.div
-              className="rounded-lg border-2 border-[#72E2AE] bg-[#162033] p-6"
+              className="rounded-lg border-2 border-[#72E2AE] bg-[#162033] p-6 transition duration-300 ease-in-out hover:-translate-y-2 hover:scale-105 hover:shadow-[0_0_20px_#72E2AE]"
               animate={{
                 boxShadow: ["0px 0px 1px #72E2AE", "0px 0px 10px #72E2AE"],
               }}
@@ -89,7 +89,7 @@ export default function MyServices() {
             >
               <div className="flex items-start justify-between pb-7">
                 <div className="rounded-full bg-[#72E2AE] bg-opacity-20 p-4">
-                  <Wrench  className="h-8 w-8 text-[#72E2AE]" />
+                  <Wrench className="h-8 w-8 text-[#72E2AE]" />
                 </div>
                 <span className="text-5xl font-bold opacity-25">03</span>
               </div>
