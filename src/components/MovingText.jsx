@@ -13,9 +13,9 @@ export default function MovingText({what}) {
   const x = useTransform(scrollYProgress, [0, 1], ["-100%", "100%"]); // Bergerak dari kiri ke kanan
 
   return (
-    <div ref={containerRef} className="relative w-full overflow-hidden -mt-16 opacity-10">
+    <div ref={containerRef} className="relative w-full overflow-hidden -mt-20 opacity-10">
       <motion.h1
-        className="text-9xl font-bold"
+        className="text-9xl font-bold uppercase"
         style={{ x }}
       >
         {what}

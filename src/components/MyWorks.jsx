@@ -1,24 +1,22 @@
+"use client";
 import { Image, SquareArrowOutUpRight } from "lucide-react";
-import MovingText from "@/components/MovingText";
 import Container from "./Container";
+import TitleText from "./TitleText";
 export default function MyWorks() {
   return (
     <section
       className="works-section mx-auto bg-[#0F172A] py-10 text-white"
       style={{
         backgroundImage: "url('/lineo.svg')",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-    backgroundAttachment: "fixed", // Supaya gambar tetap di posisi yang sama
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        backgroundAttachment: "fixed", // Supaya gambar tetap di posisi yang sama
       }}
     >
       <Container>
         <div className="mx-auto text-center">
-          <div className="relative mb-14 overflow-hidden">
-            <h2 className="mb-6 text-5xl font-bold">My Works</h2>
-            <MovingText what="WORKS" />
-          </div>
+          <TitleText text={"my works"} bgText={"works"}/>
 
           <div className="grid gap-6 md:grid-cols-3">
             <div className="group rounded-lg bg-[#162033] p-5 shadow-lg">

@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import MovingText from "./MovingText";
 import Container from "./Container";
+import TitleText from "./TitleText";
 
 export default function AboutMe() {
   return (
@@ -10,17 +10,14 @@ export default function AboutMe() {
       className="about-section mx-auto lg:pt-24 xl:pt-32"
       style={{
         backgroundImage: "url('/lineo.svg')",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-    backgroundAttachment: "fixed", // Supaya gambar tetap di posisi yang sama
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        backgroundAttachment: "fixed", // Supaya gambar tetap di posisi yang sama
       }}
     >
       <Container>
-        <div className="relative overflow-hidden">
-          <h2 className="mb-6 text-center text-5xl font-bold">About Me</h2>
-          <MovingText what="ABOUT" />
-        </div>
+        <TitleText text={"about me"} bgText={"about"}/>
         <div className="grid grid-cols-2 items-center justify-center gap-10 pb-20 pt-14">
           {/* Bagian Gambar */}
           <div className="col-span-2 flex justify-center lg:col-span-1 lg:justify-end">

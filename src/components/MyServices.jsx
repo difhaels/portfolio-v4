@@ -1,8 +1,8 @@
 "use client";
 import { Brush, CodeXml, Wrench } from "lucide-react";
 import Container from "./Container";
-import MovingText from "./MovingText";
 import { motion } from "framer-motion";
+import TitleText from "./TitleText";
 
 export default function MyServices() {
   return (
@@ -18,23 +18,7 @@ export default function MyServices() {
     >
       <Container>
         <div className="mx-auto">
-          <div className="relative mb-14 overflow-hidden">
-            <h2 className="mb-5 text-center text-5xl font-bold">My Services</h2>
-            <div className="relative mx-auto h-[6px] w-32 overflow-hidden rounded-full bg-[#72E2AE]/30">
-              <motion.div
-                className="absolute left-0 top-0 h-[6px] w-[6px] rounded-full bg-[#72E2AE]"
-                animate={{ x: ["-1vw", "16vw"] }} // Geser lebih jauh
-                transition={{
-                  duration: 4,
-                  repeat: Infinity,
-                  ease: "linear",
-                }}
-              />
-            </div>
-
-            <MovingText what="SERVICES" />
-          </div>
-
+          <TitleText text={"my services"} bgText={"SERVICES"}/>
           <div className="grid gap-6 md:grid-cols-3">
             <motion.div
               className="rounded-lg border-2 border-[#72E2AE] bg-[#162033] p-6 transition duration-300 ease-in-out hover:-translate-y-2 hover:scale-105 hover:shadow-[0_0_20px_#72E2AE]"
