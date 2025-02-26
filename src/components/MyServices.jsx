@@ -3,19 +3,11 @@ import { Brush, CodeXml, Wrench } from "lucide-react";
 import Container from "./Container";
 import { motion } from "framer-motion";
 import TitleText from "./TitleText";
+import Section from "./Section";
 
 export default function MyServices() {
   return (
-    <section
-      className="service-section mx-auto bg-[#0F172A] py-10 text-white"
-      style={{
-        backgroundImage: "url('/lineo.svg')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        backgroundAttachment: "fixed", // Supaya gambar tetap di posisi yang sama
-      }}
-    >
+    <Section what={"section-service"}>
       <Container>
         <div className="mx-auto">
           <TitleText text={"my services"} bgText={"SERVICES"}/>
@@ -99,6 +91,6 @@ export default function MyServices() {
           </div>
         </div>
       </Container>
-    </section>
+    </Section>
   );
 }

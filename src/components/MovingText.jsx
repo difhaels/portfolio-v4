@@ -7,10 +7,10 @@ export default function MovingText({what}) {
   const containerRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["start end", "end start"], // Mulai saat container muncul, selesai saat container hilang
+    offset: ["start end", "end start"], 
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["-100%", "100%"]); // Bergerak dari kiri ke kanan
+  const x = useTransform(scrollYProgress, [0, 1], ["-100%", "100%"]); 
 
   return (
     <div ref={containerRef} className="relative w-full overflow-hidden -mt-20 opacity-10">

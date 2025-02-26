@@ -2,21 +2,13 @@
 import { Image, SquareArrowOutUpRight } from "lucide-react";
 import Container from "./Container";
 import TitleText from "./TitleText";
+import Section from "./Section";
 export default function MyWorks() {
   return (
-    <section
-      className="works-section mx-auto bg-[#0F172A] py-10 text-white"
-      style={{
-        backgroundImage: "url('/lineo.svg')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        backgroundAttachment: "fixed", // Supaya gambar tetap di posisi yang sama
-      }}
-    >
+    <Section what={"section-works"}>
       <Container>
         <div className="mx-auto text-center">
-          <TitleText text={"my works"} bgText={"works"}/>
+          <TitleText text={"my works"} bgText={"works"} />
 
           <div className="grid gap-6 md:grid-cols-3">
             <div className="group rounded-lg bg-[#162033] p-5 shadow-lg">
@@ -97,6 +89,6 @@ export default function MyWorks() {
           </div>
         </div>
       </Container>
-    </section>
+    </Section>
   );
 }

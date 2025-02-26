@@ -3,19 +3,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import Container from "./Container";
 import TitleText from "./TitleText";
+import Section from "./Section";
 
 export default function AboutMe() {
   return (
-    <section
-      className="about-section mx-auto lg:pt-24 xl:pt-32"
-      style={{
-        backgroundImage: "url('/lineo.svg')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        backgroundAttachment: "fixed", // Supaya gambar tetap di posisi yang sama
-      }}
-    >
+    <Section what={"about-section"}>
       <Container>
         <TitleText text={"about me"} bgText={"about"}/>
         <div className="grid grid-cols-2 items-center justify-center gap-10 pb-20 pt-14">
@@ -117,6 +109,6 @@ export default function AboutMe() {
           </div>
         </div>
       </Container>
-    </section>
+    </Section>
   );
 }
