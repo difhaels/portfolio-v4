@@ -10,6 +10,8 @@ import {
 } from "react-icons/si";
 import Container from "./Container";
 import MovingText from "./MovingText";
+import Section from "./Section";
+import TitleText from "./TitleText";
 
 export default function MySkills() {
   const skills = [
@@ -47,22 +49,11 @@ export default function MySkills() {
     },
   ];
   return (
-    <section
-      className="skills-section mx-auto bg-[#0F172A] py-10 text-white"
-      style={{
-        backgroundImage: "url('/lineo.svg')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        backgroundAttachment: "fixed", // Supaya gambar tetap di posisi yang sama
-      }}
+    <Section what={"section-skills"}
     >
       <Container>
         <div className="mx-auto">
-          <div className="relative mb-14 overflow-hidden">
-            <h2 className="mb-6 text-center text-5xl font-bold">My Skills</h2>
-            <MovingText what="SKILLS" />
-          </div>
+          <TitleText text={"my skills"} bgText={"skills"}/>
 
           <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
             {skills.map((skill) => (
@@ -93,6 +84,6 @@ export default function MySkills() {
           </div>
         </div>
       </Container>
-    </section>
+    </Section>
   );
 }

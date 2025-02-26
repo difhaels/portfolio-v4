@@ -10,10 +10,10 @@ export default function AboutMe() {
     <Section what={"about-section"}>
       <Container>
         <TitleText text={"about me"} bgText={"about"}/>
-        <div className="grid grid-cols-2 items-center justify-center gap-10 pb-20 pt-14">
+        <div className="grid grid-cols-2 items-center justify-center gap-10">
           {/* Bagian Gambar */}
           <div className="col-span-2 flex justify-center lg:col-span-1 lg:justify-end">
-            <div className="relative max-w-[340px] overflow-hidden rounded-md border border-[#72E2AE] shadow-[0_0_15px_#72E2AE] sm:max-w-[450px]">
+            <div className="relative w-full overflow-hidden rounded-md border border-[#72E2AE] shadow-[0_0_15px_#72E2AE] sm:max-w-[450px]">
               {/* Efek api di bawah */}
               <div className="absolute -bottom-6 left-1/2 flex -translate-x-1/2 gap-1">
                 {[...Array(10)].map((_, i) => (
@@ -44,7 +44,7 @@ export default function AboutMe() {
           </div>
 
           {/* Bagian Konten */}
-          <div className="col-span-2 mx-10 sm:mx-0 lg:col-span-1">
+          <div className="col-span-2 lg:col-span-1 flex justify-start">
             <div className="about-content">
               <h3 className="text-2xl font-bold">
                 Hi, I am <span className="text-[#72E2AE]">Agung Saputra</span>
