@@ -1,29 +1,60 @@
+"use client";
+import Container from "./Container";
+import Section from "./Section";
+import TitleText from "./TitleText";
+
 export default function ClientReviews() {
   return (
-    <section className="py-20 bg-[#1A1F2B] text-white px-6">
-      <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-6">Client Reviews</h2>
-        <p className="text-gray-400 text-lg leading-relaxed mb-10">
-          Hear what my clients have to say about my work.
-        </p>
-        
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div className="bg-[#121729] p-6 rounded-lg shadow-lg">
-            <p className="text-gray-300 italic">"Amazing developer! Delivered exactly what I needed and more."</p>
-            <h4 className="text-lg font-semibold mt-4">- John Doe</h4>
+    <Section>
+      <Container>
+        <TitleText text={"client reviews"} bgText={"reviews"} />
+
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div className="bg-[#162033] rounded-xl px-7 pb-5 border mb-10">
+            <div className="border-4 w-20 h-20 rounded-full border-[#72E2AE] flex items-center justify-center mb-5 -mt-10">
+              <img
+                src="/person.svg"
+                alt="myIcon"
+                className="h-16 w-16 rounded-full bg-white p-2"
+              />
+            </div>
+            <h1 className="text-lg">Tubagus Habibi</h1>
+            <h1 className="text-sm py-1 text-gray-300">Client - Friend</h1>
+            <p className="italic text-gray-300">
+              "Amazing developer! Delivered exactly what I needed and more."
+            </p>
           </div>
-          
-          <div className="bg-[#121729] p-6 rounded-lg shadow-lg">
-            <p className="text-gray-300 italic">"Great attention to detail and very responsive. Highly recommend!"</p>
-            <h4 className="text-lg font-semibold mt-4">- Jane Smith</h4>
+          <div className="bg-[#162033] rounded-xl px-7 pb-5 border mb-10">
+            <div className="border-4 w-20 h-20 rounded-full border-[#72E2AE] flex items-center justify-center mb-5 -mt-10">
+              <img
+                src="/person.svg"
+                alt="myIcon"
+                className="h-16 w-16 rounded-full bg-white p-2"
+              />
+            </div>
+            <h1 className="text-lg">Tubagus Habibi</h1>
+            <h1 className="text-sm py-1 text-gray-300">Client - Friend</h1>
+            <p className="italic text-gray-300">
+              "Amazing developer! Delivered exactly what I needed and more."
+            </p>
           </div>
-          
-          <div className="bg-[#121729] p-6 rounded-lg shadow-lg">
-            <p className="text-gray-300 italic">"Exceeded my expectations. Will definitely work with again!"</p>
-            <h4 className="text-lg font-semibold mt-4">- Alex Johnson</h4>
+          <div className="bg-[#162033] rounded-xl px-7 pb-5 border mb-10">
+            <div className="border-4 w-20 h-20 rounded-full border-[#72E2AE] flex items-center justify-center mb-5 -mt-10">
+              <img
+                src="/person.svg"
+                alt="myIcon"
+                className="h-16 w-16 rounded-full bg-white p-2"
+              />
+            </div>
+            <h1 className="text-lg">Tubagus Habibi</h1>
+            <h1 className="text-sm py-1 text-gray-300">Client - Friend</h1>
+            <p className="italic text-gray-300">
+              "Amazing developer! Delivered exactly what I needed and more."
+            </p>
           </div>
+
         </div>
-      </div>
-    </section>
+      </Container>
+    </Section>
   );
 }

@@ -53,21 +53,13 @@ export default function MySkills() {
         { name: "Cloudinary", icon: <SiCloudinary className="text-gray-400" /> },
       ],
     },
-    {
-      category: "UI/UX & Others",
-      items: [
-        { name: "Figma", icon: <FaFigma className="text-pink-400" /> },
-        
-        
-      ],
-    },
   ];
 
   return (
     <Section what={"section-skills"}>
       <Container>
         <TitleText text={"my skills"} bgText={"skills"} />
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
           {skills.map((skill) => (
             <motion.div
               key={skill.category}
