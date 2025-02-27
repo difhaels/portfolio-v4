@@ -49,39 +49,35 @@ export default function MySkills() {
     },
   ];
   return (
-    <Section what={"section-skills"}
-    >
+    <Section what={"section-skills"}>
       <Container>
-        <div className="mx-auto">
-          <TitleText text={"my skills"} bgText={"skills"}/>
-
-          <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
-            {skills.map((skill) => (
-              <motion.div
-                key={skill.category}
-                className="relative rounded-xl border border-gray-800 bg-[#111827] p-8 shadow-lg transition-all duration-300"
-                whileHover={{
-                  y: -4,
-                  boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.3)",
-                }}
-              >
-                <h3 className="mb-6 text-xl font-medium text-gray-100">
-                  {skill.category}
-                </h3>
-                <div className="space-y-3">
-                  {skill.items.map((item, index) => (
-                    <div
-                      key={index}
-                      className="flex items-center gap-4 rounded-lg bg-[#1F2937] p-3"
-                    >
-                      <span className="text-3xl">{item.icon}</span>
-                      <p className="text-lg text-gray-300">{item.name}</p>
-                    </div>
-                  ))}
-                </div>
-              </motion.div>
-            ))}
-          </div>
+        <TitleText text={"my skills"} bgText={"skills"} />
+        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+          {skills.map((skill) => (
+            <motion.div
+              key={skill.category}
+              className="relative rounded-xl border border-gray-800 bg-[#111827] p-8 shadow-lg transition-all duration-300"
+              whileHover={{
+                y: -4,
+                boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.3)",
+              }}
+            >
+              <h3 className="mb-6 text-xl font-medium text-gray-100">
+                {skill.category}
+              </h3>
+              <div className="space-y-3">
+                {skill.items.map((item, index) => (
+                  <div
+                    key={index}
+                    className="flex items-center gap-4 rounded-lg bg-[#1F2937] p-3"
+                  >
+                    <span className="text-3xl">{item.icon}</span>
+                    <p className="text-lg text-gray-300">{item.name}</p>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+          ))}
         </div>
       </Container>
     </Section>
