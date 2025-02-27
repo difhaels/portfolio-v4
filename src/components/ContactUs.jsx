@@ -1,12 +1,12 @@
 "use client";
-import { Phone } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 import Container from "./Container";
 import Section from "./Section";
 import TitleText from "./TitleText";
 
 export default function ContactUs() {
   return (
-    <Section className="section-contact">
+    <Section what="section-contact pb-20">
       <Container>
         <TitleText text={"contact us"} bgText={"contact"} />
         <div className="grid gap-6 md:grid-cols-2">
@@ -20,7 +20,7 @@ export default function ContactUs() {
             <div className="my-6 h-1 w-20 rounded-xl bg-[#72E2AE] opacity-30"></div>
             <div className="flex flex-col gap-5">
               <div className="flex gap-3 rounded-lg border border-gray-800 bg-[#162033] p-5">
-                <div className="rounded-full bg-[#72E2AE] bg-opacity-25 p-4 text-[#72E2AE]">
+                <div className="rounded-full bg-[#72E2AE] bg-opacity-25 p-4 text-[#72E2AE] h-fit">
                   <Phone />
                 </div>
                 <div>
@@ -31,25 +31,25 @@ export default function ContactUs() {
                 </div>
               </div>
               <div className="flex gap-3 rounded-lg border border-gray-800 bg-[#162033] p-5">
-                <div className="rounded-full bg-[#72E2AE] bg-opacity-25 p-4 text-[#72E2AE]">
-                  <Phone />
+                <div className="rounded-full bg-[#72E2AE] bg-opacity-25 p-4 text-[#72E2AE] h-fit">
+                <Mail />
                 </div>
                 <div>
                   <h1 className="mb-1 text-lg font-semibold">
-                    Contact on phone
+                  Contact on mail
                   </h1>
-                  <h1 className="text-gray-400">+62 895 3373 05533</h1>
+                  <h1 className="text-gray-400">agungsaputradifh@gmail.com</h1>
                 </div>
               </div>
               <div className="flex gap-3 rounded-lg border border-gray-800 bg-[#162033] p-5">
-                <div className="rounded-full bg-[#72E2AE] bg-opacity-25 p-4 text-[#72E2AE]">
-                  <Phone />
+                <div className="rounded-full bg-[#72E2AE] bg-opacity-25 p-4 text-[#72E2AE] h-fit">
+                  <MapPin />
                 </div>
                 <div>
                   <h1 className="mb-1 text-lg font-semibold">
-                    Contact on phone
+                  Contact address
                   </h1>
-                  <h1 className="text-gray-400">+62 895 3373 05533</h1>
+                  <h1 className="text-gray-400">Jl. Telkom, Gg. Tangkil II, No 257, RT1/5 </h1>
                 </div>
               </div>
             </div>

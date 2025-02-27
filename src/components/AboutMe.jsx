@@ -49,44 +49,44 @@ export default function AboutMe() {
               <h3 className="text-2xl font-bold">
                 Hi, I am <span className="text-[#72E2AE]">Agung Saputra</span>
               </h3>
-              <ul className="mt-4 space-y-2 pb-3">
-                <li className="text-lg">
+              <ul className="mt-4 space-y-2 mb-4 list-disc marker:text-[#72E2AE] ml-4 marker:text-[20px]">
+                <li className="text-lg pl-2">
                   <strong className="inline-block min-w-[120px] font-medium">
                     First Name
                   </strong>
                   : Agung
                 </li>
-                <li className="text-lg">
+                <li className="text-lg pl-2">
                   <strong className="inline-block min-w-[120px] font-medium">
                     Last Name
                   </strong>
                   : Saputra
                 </li>
-                <li className="text-lg">
+                <li className="text-lg pl-2">
                   <strong className="inline-block min-w-[120px] font-medium">
                     Age
                   </strong>
                   : 21 years
                 </li>
-                <li className="text-lg">
+                <li className="text-lg pl-2">
                   <strong className="inline-block min-w-[120px] font-medium">
                     Nationality
                   </strong>
                   : Indonesian
                 </li>
-                <li className="text-lg">
+                <li className="text-lg pl-2">
                   <strong className="inline-block min-w-[120px] font-medium">
                     Languages
                   </strong>
-                  : Indonesian, English, Russian
+                  : Indonesian, English, Japan, Russian
                 </li>
-                <li className="text-lg">
+                <li className="text-lg pl-2">
                   <strong className="inline-block min-w-[120px] font-medium">
                     Address
                   </strong>
                   : Mustikajaya, Bekasi, Indonesian
                 </li>
-                <li className="text-lg">
+                <li className="text-lg pl-2">
                   <strong className="inline-block min-w-[120px] font-medium">
                     Freelance
                   </strong>

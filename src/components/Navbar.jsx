@@ -21,7 +21,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <>
+    <section className="w-full">
       <nav className="absolute flex top-0 z-50  w-full items-center justify-between  px-8 py-4 text-white shadow-md">
         {/* Logo */}
         <div className="text-2xl font-bold">MyPortfolio</div>
@@ -131,6 +131,6 @@ export default function Navbar() {
           </span>
         </Link>
       </nav>
-    </>
+    </section>
   );
 }
