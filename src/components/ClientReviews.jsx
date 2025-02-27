@@ -5,7 +5,7 @@ import TitleText from "./TitleText";
 
 export default function ClientReviews() {
   return (
-    <Section>
+    <Section className="section-client">
       <Container>
         <TitleText text={"client reviews"} bgText={"reviews"} />
 

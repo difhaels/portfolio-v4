@@ -1,33 +1,107 @@
+"use client";
+import { Phone } from "lucide-react";
+import Container from "./Container";
+import Section from "./Section";
+import TitleText from "./TitleText";
+
 export default function ContactUs() {
   return (
-    <section className="py-20 bg-[#1A1F2B] text-white px-6">
-      <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-6">Contact Us</h2>
-        <p className="text-gray-400 text-lg leading-relaxed mb-10">
-          Feel free to reach out for any inquiries or collaborations.
-        </p>
-        
-        <form className="max-w-2xl mx-auto bg-[#121729] p-6 rounded-lg shadow-lg text-left">
-          <div className="mb-4">
-            <label className="block text-gray-300 mb-2" htmlFor="name">Name</label>
-            <input id="name" type="text" className="w-full p-3 rounded bg-[#1A1F2B] border border-gray-600 text-white" placeholder="Your Name" />
+    <Section className="section-contact">
+      <Container>
+        <TitleText text={"contact us"} bgText={"contact"} />
+        <div className="grid gap-6 md:grid-cols-2">
+          <div>
+            <h1 className="mb-1 text-xl font-semibold">Contact Information</h1>
+            <p className="text-lg text-gray-400">
+              If you have a vision I can convert that into code and a finished
+              website and web app, so don't let it just be a vision realise it
+              now and send me an E-Mail.
+            </p>
+            <div className="my-6 h-1 w-20 rounded-xl bg-[#72E2AE] opacity-30"></div>
+            <div className="flex flex-col gap-5">
+              <div className="flex gap-3 rounded-lg border border-gray-800 bg-[#162033] p-5">
+                <div className="rounded-full bg-[#72E2AE] bg-opacity-25 p-4 text-[#72E2AE]">
+                  <Phone />
+                </div>
+                <div>
+                  <h1 className="mb-1 text-lg font-semibold">
+                    Contact on phone
+                  </h1>
+                  <h1 className="text-gray-400">+62 895 3373 05533</h1>
+                </div>
+              </div>
+              <div className="flex gap-3 rounded-lg border border-gray-800 bg-[#162033] p-5">
+                <div className="rounded-full bg-[#72E2AE] bg-opacity-25 p-4 text-[#72E2AE]">
+                  <Phone />
+                </div>
+                <div>
+                  <h1 className="mb-1 text-lg font-semibold">
+                    Contact on phone
+                  </h1>
+                  <h1 className="text-gray-400">+62 895 3373 05533</h1>
+                </div>
+              </div>
+              <div className="flex gap-3 rounded-lg border border-gray-800 bg-[#162033] p-5">
+                <div className="rounded-full bg-[#72E2AE] bg-opacity-25 p-4 text-[#72E2AE]">
+                  <Phone />
+                </div>
+                <div>
+                  <h1 className="mb-1 text-lg font-semibold">
+                    Contact on phone
+                  </h1>
+                  <h1 className="text-gray-400">+62 895 3373 05533</h1>
+                </div>
+              </div>
+            </div>
           </div>
-          
-          <div className="mb-4">
-            <label className="block text-gray-300 mb-2" htmlFor="email">Email</label>
-            <input id="email" type="email" className="w-full p-3 rounded bg-[#1A1F2B] border border-gray-600 text-white" placeholder="Your Email" />
-          </div>
-          
-          <div className="mb-6">
-            <label className="block text-gray-300 mb-2" htmlFor="message">Message</label>
-            <textarea id="message" className="w-full p-3 rounded bg-[#1A1F2B] border border-gray-600 text-white h-32" placeholder="Your Message"></textarea>
-          </div>
-          
-          <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded font-semibold">
-            Send Message
-          </button>
-        </form>
-      </div>
-    </section>
+          <form className="mx-auto w-full h-fit rounded-lg border border-gray-800 bg-[#162033] p-6 text-left shadow-lg">
+            <div className="mb-4">
+              <label className="mb-2 block text-gray-300" htmlFor="name">
+                Name
+              </label>
+              <input
+                id="name"
+                type="text"
+                className="w-full rounded border border-gray-600 bg-[#1A1F2B] p-3 text-white focus:border-[#72E2AE] focus:outline-none"
+                placeholder="Your Name"
+              />
+            </div>
+
+            <div className="mb-4">
+              <label className="mb-2 block text-gray-300" htmlFor="email">
+                Email
+              </label>
+              <input
+                id="email"
+                type="email"
+                className="w-full rounded border border-gray-600 bg-[#1A1F2B] p-3 text-white focus:border-[#72E2AE] focus:outline-none"
+                placeholder="Your Email"
+              />
+            </div>
+
+            <div className="mb-6">
+              <label className="mb-2 block text-gray-300" htmlFor="message">
+                Message
+              </label>
+              <textarea
+                id="message"
+                className="h-32 w-full rounded border border-gray-600 bg-[#1A1F2B] p-3 text-white focus:border-[#72E2AE] focus:outline-none"
+                placeholder="Your Message"
+              ></textarea>
+            </div>
+
+            <button className="group relative inline-block h-10 w-28 overflow-hidden rounded-sm uppercase text-slate-900">
+              <span className="front absolute inset-0 flex items-center justify-center bg-[#72E2AE] text-slate-900 transition-all duration-500 group-hover:-translate-y-full">
+                send mail
+              </span>
+              {/* Ikon Baru Muncul dari Bawah */}
+              <span className="back absolute inset-0 flex translate-y-full items-center justify-center bg-white text-slate-900 transition-all duration-500 group-hover:translate-y-0">
+                send mail
+              </span>
+            </button>
+          </form>
+        </div>
+      </Container>
+    </Section>
   );
 }
