@@ -1,14 +1,18 @@
+import Container from "./Container";
+import Sosmed from "./Sosmed";
+
 export default function Footer() {
   return (
-    <footer className="py-6 bg-[#121729] text-white text-center">
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="flex justify-center space-x-6 mb-4">
-          <a href="#" className="text-gray-400 hover:text-white transition">Twitter</a>
-          <a href="#" className="text-gray-400 hover:text-white transition">LinkedIn</a>
-          <a href="#" className="text-gray-400 hover:text-white transition">GitHub</a>
+    <footer className="border-t border-gray-800 bg-[#0F172A]">
+      <Container>
+        <div className="flex flex-col items-center justify-center gap-5 p-5 sm:flex-row sm:justify-between sm:gap-0">
+          <Sosmed />
+          <h1 className="text-gray-400">
+            © 2025, All right reserved{" "}
+            <span className="text-white">Difhaels</span>
+          </h1>
         </div>
-        <p className="text-gray-500 text-sm">&copy; {new Date().getFullYear()} All Rights Reserved.</p>
-      </div>
+      </Container>
     </footer>
   );
 }
