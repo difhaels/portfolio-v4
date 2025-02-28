@@ -20,9 +20,9 @@ export default function Navbar({ scrollToContact }) {
       <nav className="absolute left-1/2 top-0 z-50 flex w-full max-w-7xl -translate-x-1/2 items-center justify-between px-6 py-4 text-white">
         {/* Logo */}
         <img
-          src="/as.svg"
-          alt="myIcon"
-          className="h-16  rounded-full p-2"
+          src="/logo.svg"
+          alt="logo"
+          className="h-14 p-2"
         />
 
         {/* Navigation Links */}
@@ -82,9 +82,9 @@ export default function Navbar({ scrollToContact }) {
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between">
         <img
-          src="/as.svg"
-          alt="myIcon"
-          className="h-16  rounded-full p-2"
+          src="/logo.svg"
+          alt="logo"
+          className="h-14 p-1"
         />
 
           {/* Navigation Links */}

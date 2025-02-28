@@ -1,12 +1,15 @@
-import AboutMe from '@/components/AboutMe'
-import Navbar from '@/components/Navbar'
-import React from 'react'
+import AboutMe from "@/components/AboutMe";
+import ClientReviews from "@/components/ClientReviews";
+import MyServices from "@/components/MyServices";
+import PageContainer from "@/components/PageContainer";
+import React from "react";
 
 export default function page() {
   return (
-    <>
-      <Navbar/>
-      <AboutMe/>
-    </>
-  )
+    <PageContainer>
+      <AboutMe />
+      <MyServices />
+      <ClientReviews />
+    </PageContainer>
+  );
 }
