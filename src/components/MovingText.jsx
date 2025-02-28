@@ -10,7 +10,7 @@ export default function MovingText({what}) {
     offset: ["start end", "end start"], 
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["-100%", "100%"]); 
+  const x = useTransform(scrollYProgress, [0, 1], ["-100%", "80%"]); 
 
   return (
     <div ref={containerRef} className="relative w-full overflow-hidden -mt-20 opacity-10">

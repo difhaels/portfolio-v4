@@ -9,9 +9,9 @@ export default function TitleText({text, bgText}) {
       <div className="relative mx-auto h-[6px] w-32 overflow-hidden rounded-full bg-[#72E2AE]/30">
         <motion.div
           className="absolute left-0 top-0 h-[6px] w-[6px] rounded-full bg-[#72E2AE]"
-          animate={{ x: ["-1vw", "16vw"] }}
+          animate={{ x: ["1px", "130px"] }}
           transition={{
-            duration: 4,
+            duration: 3,
             repeat: Infinity,
             ease: "linear",
           }}
