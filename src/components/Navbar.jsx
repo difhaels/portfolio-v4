@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
-export default function Navbar() {
+export default function Navbar({ scrollToContact }) {
   const [isScroll, setIsScroll] = useState(false);
 
   useEffect(() => {
@@ -58,8 +58,8 @@ export default function Navbar() {
         </ul>
 
         {/* Hire Me Button */}
-        <Link
-          href="/contact"
+        <button
+          onClick={scrollToContact}
           className="group relative inline-block h-10 w-24 overflow-hidden rounded-sm px-4 py-2 uppercase text-slate-900"
         >
           <span className="front absolute inset-0 flex items-center justify-center bg-[#72E2AE] text-slate-900 transition-all duration-500 group-hover:-translate-y-full">
@@ -69,7 +69,7 @@ export default function Navbar() {
           <span className="back absolute inset-0 flex translate-y-full items-center justify-center bg-white text-slate-900 transition-all duration-500 group-hover:translate-y-0">
             Hire Me
           </span>
-        </Link>
+        </button>
       </nav>
 
       <motion.nav
@@ -99,8 +99,8 @@ export default function Navbar() {
           </ul>
 
           {/* Hire Me Button */}
-          <Link
-            href="/contact"
+          <button
+            onClick={scrollToContact}
             className="group relative inline-block h-10 w-24 overflow-hidden rounded-sm px-4 py-2 uppercase text-slate-900"
           >
             <span className="front absolute inset-0 flex items-center justify-center bg-[#72E2AE] text-slate-900 transition-all duration-500 group-hover:-translate-y-full">
@@ -109,7 +109,7 @@ export default function Navbar() {
             <span className="back absolute inset-0 flex translate-y-full items-center justify-center bg-white text-slate-900 transition-all duration-500 group-hover:translate-y-0">
               Hire Me
             </span>
-          </Link>
+          </button>
         </div>
       </motion.nav>
     </section>

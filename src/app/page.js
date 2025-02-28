@@ -1,3 +1,4 @@
+"use client";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import AboutMe from "@/components/AboutMe";
@@ -9,11 +10,17 @@ import ClientReviews from "@/components/ClientReviews";
 import ContactUs from "@/components/ContactUs";
 import Footer from "@/components/Footer";
 import Up from "@/components/Up";
+import { useRef } from "react";
 
 export default function Home() {
+  const contactRef = useRef(null);
+
+  const scrollToContact = () => {
+    contactRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <div>
-      <Navbar />
+      <Navbar scrollToContact={scrollToContact} />
       <HeroSection />
       <AboutMe />
       <MyWorks />
@@ -21,7 +28,9 @@ export default function Home() {
       <MySkills />
       <MyResume />
       <ClientReviews />
-      <ContactUs />
+      <div ref={contactRef}>
+        <ContactUs />
+      </div>
       <Footer />
       <Up />
     </div>

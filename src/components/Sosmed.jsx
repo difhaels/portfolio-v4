@@ -5,7 +5,7 @@ export default function Sosmed() {
   return (
     <div className="mt-3 flex space-x-4">
       <a
-        href="#"
+        href="https://www.facebook.com/profile.php?id=100038309832831" target="_blank"
         className="group relative inline-block h-10 w-10 overflow-hidden rounded border border-white/10 text-lg"
       >
         {/* Ikon Awal */}
@@ -19,7 +19,7 @@ export default function Sosmed() {
         </span>
       </a>
       <a
-        href="#"
+        href="https://www.instagram.com/difhaels/" target="_blank"
         className="group relative inline-block h-10 w-10 overflow-hidden rounded border border-white/10 text-lg"
       >
         {/* Ikon Awal */}
@@ -33,7 +33,7 @@ export default function Sosmed() {
         </span>
       </a>
       <a
-        href="#"
+        href="https://github.com/difhaels" target="_blank"
         className="group relative inline-block h-10 w-10 overflow-hidden rounded border border-white/10 text-lg"
       >
         {/* Ikon Awal */}
@@ -47,7 +47,7 @@ export default function Sosmed() {
         </span>
       </a>
       <a
-        href="#"
+        href="https://linkedin.com/in/agung-saputra-431857276" target="_blank"
         className="group relative inline-block h-10 w-10 overflow-hidden rounded border border-white/10 text-lg"
       >
         {/* Ikon Awal */}
