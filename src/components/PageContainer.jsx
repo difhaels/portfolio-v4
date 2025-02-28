@@ -1,19 +1,29 @@
 "use client";
 import React, { useState } from "react";
 import SideNavbar from "./SideNavbar";
-import FullScreenMenu from "./FullScreenMenu";
+import MiniSideNavbar from "./MiniSideNavbar";
+import Navbar3 from "./Navbar3";
+import Navbar4 from "./Navbar4";
 
 export default function PageContainer({ children }) {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpenNavbar, setIsOpenNavbar] = useState(false);
+  const [isOpenMiniNavbar, setIsOpenMiniNavbar] = useState(false);
 
   return (
     <div className="relative flex">
       {/* Sidebar */}
-      <SideNavbar setIsOpen={setIsOpen} />
-      {/* Fullscreen Menu */}
-      <FullScreenMenu isOpen={isOpen} setIsOpen={setIsOpen} />
+      <div className="hidden sm:block">
+        <SideNavbar setIsOpenNavbar={setIsOpenNavbar} />
+      </div>
+      <div className="block sm:hidden">
+        <MiniSideNavbar setIsOpenMiniNavbar={setIsOpenMiniNavbar}/>
+      </div>
+      {/* Navbar 3 */}
+      <Navbar3 isOpenNavbar={isOpenNavbar} setIsOpenNavbar={setIsOpenNavbar} />
+      {/* Navbar 4 */}
+      <Navbar4 isOpenMiniNavbar={isOpenMiniNavbar} setIsOpenMiniNavbar={setIsOpenMiniNavbar} />
       {/* Konten utama */}
-      <div className="flex-1 pl-20">{children}</div>
+      <div className="flex-1 pl-0 sm:pl-20">{children}</div>
     </div>
   );
 }

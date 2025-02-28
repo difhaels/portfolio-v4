@@ -1,10 +1,10 @@
 import React from "react";
 
-export default function FullScreenMenu({ isOpen, setIsOpen }) {
+export default function Navbar3({ isOpenNavbar, setIsOpenNavbar }) {
   return (
     <div
       className={`fixed left-20 top-0 z-40 w-[calc(100%-5rem)] bg-gray-900 transition-transform duration-500 ${
-        isOpen ? "translate-x-0" : "translate-x-full"
+        isOpenNavbar ? "translate-x-0" : "translate-x-full"
       }`}
     >
       <ul className="flex items-center justify-between text-white">
@@ -12,7 +12,7 @@ export default function FullScreenMenu({ isOpen, setIsOpen }) {
           <a
             href="/"
             className="group-hover:text-primary flex h-screen w-full items-center justify-center p-5 text-5xl font-bold uppercase hover:text-[#72E2AE]"
-            onClick={() => setIsOpen(false)}
+            onClick={() => setIsOpenNavbar(false)}
             style={{ writingMode: "sideways-lr" }}
           >
             <span className="mt-3 text-[#72e2ae]">
@@ -26,7 +26,7 @@ export default function FullScreenMenu({ isOpen, setIsOpen }) {
           <a
             href="/about"
             className="group-hover:text-primary flex h-screen w-full items-center justify-center p-5 text-5xl font-bold uppercase hover:text-[#72E2AE]"
-            onClick={() => setIsOpen(false)}
+            onClick={() => setIsOpenNavbar(false)}
             style={{ writingMode: "sideways-lr" }}
           >
             <span className="mt-3 text-[#72e2ae]">
@@ -40,7 +40,7 @@ export default function FullScreenMenu({ isOpen, setIsOpen }) {
           <a
             href="/resume"
             className="group-hover:text-primary flex h-screen w-full items-center justify-center p-5 text-5xl font-bold uppercase hover:text-[#72E2AE]"
-            onClick={() => setIsOpen(false)}
+            onClick={() => setIsOpenNavbar(false)}
             style={{ writingMode: "sideways-lr" }}
           >
             <span className="mt-3 text-[#72e2ae]">
@@ -54,7 +54,7 @@ export default function FullScreenMenu({ isOpen, setIsOpen }) {
           <a
             href="/works"
             className="group-hover:text-primary flex h-screen w-full items-center justify-center p-5 text-5xl font-bold uppercase hover:text-[#72E2AE]"
-            onClick={() => setIsOpen(false)}
+            onClick={() => setIsOpenNavbar(false)}
             style={{ writingMode: "sideways-lr" }}
           >
             <span className="mt-3 text-[#72e2ae]">
@@ -68,7 +68,7 @@ export default function FullScreenMenu({ isOpen, setIsOpen }) {
           <a
             href="/contact"
             className="group-hover:text-primary flex h-screen w-full items-center justify-center p-5 text-5xl font-bold uppercase hover:text-[#72E2AE]"
-            onClick={() => setIsOpen(false)}
+            onClick={() => setIsOpenNavbar(false)}
             style={{ writingMode: "sideways-lr" }}
           >
             <span className="mt-3 text-[#72e2ae]">
