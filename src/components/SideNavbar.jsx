@@ -1,9 +1,6 @@
-"use client";
-import { useState } from "react";
 import { Menu } from "lucide-react";
 
-export default function SideNavbar() {
-  const [isOpen, setIsOpen] = useState(false);
+export default function SideNavbar({setIsOpen}) {
 
   return (
     <aside className="fixed left-0 top-0 z-40 flex h-screen w-20 flex-col justify-between border-r border-white/10 bg-gray-900 py-8 text-center">
@@ -23,7 +20,10 @@ export default function SideNavbar() {
 
       {/* Menu Button */}
       <div className="flex h-20 items-center justify-center">
-        <button onClick={() => setIsOpen(!isOpen)} className="text-gray-500 hover:text-white">
+        <button
+          onClick={() => setIsOpen((prev) => !prev)}
+          className="text-gray-500 hover:text-white"
+        >
           <Menu className="h-10 w-10" />
         </button>
       </div>
