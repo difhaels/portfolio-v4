@@ -8,6 +8,7 @@ import MyResume from "@/components/MyResume";
 import ClientReviews from "@/components/ClientReviews";
 import ContactUs from "@/components/ContactUs";
 import Footer from "@/components/Footer";
+import Up from "@/components/Up";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <ClientReviews />
       <ContactUs />
       <Footer />
+      <Up />
     </div>
   );
 }
