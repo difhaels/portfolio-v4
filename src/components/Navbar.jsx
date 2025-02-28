@@ -19,9 +19,11 @@ export default function Navbar({ scrollToContact }) {
     <section className="w-full">
       <nav className="absolute left-1/2 top-0 z-50 flex w-full max-w-7xl -translate-x-1/2 items-center justify-between px-6 py-4 text-white">
         {/* Logo */}
-        <div className="text-2xl font-bold">
-          A<span className="text-[#72E2AE]">S</span>
-        </div>
+        <img
+          src="/as.svg"
+          alt="myIcon"
+          className="h-16  rounded-full p-2"
+        />
 
         {/* Navigation Links */}
         <ul className="hidden space-x-10 text-sm font-semibold uppercase sm:flex">
@@ -79,9 +81,11 @@ export default function Navbar({ scrollToContact }) {
         className="fixed top-0 z-50 w-full border-b border-white border-opacity-20 bg-[#060A15] bg-opacity-50 px-6 py-4 text-white shadow-md backdrop-blur backdrop-filter"
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between">
-          <div className="text-2xl font-bold">
-            A<span className="text-[#72E2AE]">S</span>
-          </div>
+        <img
+          src="/as.svg"
+          alt="myIcon"
+          className="h-16  rounded-full p-2"
+        />
 
           {/* Navigation Links */}
           <ul className="hidden space-x-10 text-sm font-semibold uppercase sm:flex">
