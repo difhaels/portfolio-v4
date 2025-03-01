@@ -17,11 +17,11 @@ export default function Navbar4({ isOpenMiniNavbar, setIsOpenMiniNavbar }) {
       </button>
 
       <nav className="flex flex-col items-center justify-center h-full text-white space-y-6 text-2xl font-semibold">
-        <a href="#home" className="hover:text-[#72e2ae]" onClick={() => setIsOpenMiniNavbar(false)}><span className="text-[#72e2ae]">01. </span>Home</a>
-        <a href="#about" className="hover:text-[#72e2ae]" onClick={() => setIsOpenMiniNavbar(false)}><span className="text-[#72e2ae]">02. </span>About</a>
-        <a href="#services" className="hover:text-[#72e2ae]" onClick={() => setIsOpenMiniNavbar(false)}><span className="text-[#72e2ae]">03. </span>Services</a>
-        <a href="#portfolio" className="hover:text-[#72e2ae]" onClick={() => setIsOpenMiniNavbar(false)}><span className="text-[#72e2ae]">04. </span>Portfolio</a>
-        <a href="#contact" className="hover:text-[#72e2ae]" onClick={() => setIsOpenMiniNavbar(false)}><span className="text-[#72e2ae]">05. </span>Contact</a>
+        <a href="/" className="hover:text-[#72e2ae]" onClick={() => setIsOpenMiniNavbar(false)}><span className="text-[#72e2ae]">01. </span>Home</a>
+        <a href="/about" className="hover:text-[#72e2ae]" onClick={() => setIsOpenMiniNavbar(false)}><span className="text-[#72e2ae]">02. </span>About</a>
+        <a href="/resume" className="hover:text-[#72e2ae]" onClick={() => setIsOpenMiniNavbar(false)}><span className="text-[#72e2ae]">03. </span>Resume</a>
+        <a href="/works" className="hover:text-[#72e2ae]" onClick={() => setIsOpenMiniNavbar(false)}><span className="text-[#72e2ae]">04. </span>Wokrs</a>
+        <a href="/contact" className="hover:text-[#72e2ae]" onClick={() => setIsOpenMiniNavbar(false)}><span className="text-[#72e2ae]">05. </span>Contact</a>
       </nav>
     </div>
   );

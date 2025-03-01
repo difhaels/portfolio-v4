@@ -14,8 +14,11 @@ export default function MovingText({what}) {
 
   return (
     <div ref={containerRef} className="relative w-full overflow-hidden -mt-20 opacity-10">
+      <h1 className="text-8xl sm:text-9xl font-bold uppercase text-center sm:hidden">
+        {what}
+      </h1>
       <motion.h1
-        className="text-9xl font-bold uppercase"
+        className="text-9xl font-bold uppercase hidden sm:block"
         style={{ x }}
       >
         {what}
