@@ -4,11 +4,11 @@ import Container from "./Container";
 import Section from "./Section";
 import TitleText from "./TitleText";
 
-export default function ContactUs() {
+export default function ContactUs({isStay}) {
   return (
     <Section what="section-contact pb-20">
       <Container>
-        <TitleText text={"contact us"} bgText={"contact"} />
+        <TitleText text={"contact us"} bgText={"contact"} isStay={isStay} />
         <div className="grid gap-6 md:grid-cols-2">
           <div>
             <h1 className="mb-1 text-xl font-semibold">Contact Information</h1>

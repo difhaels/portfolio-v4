@@ -2,7 +2,7 @@ import React from "react";
 import MovingText from "./MovingText";
 import { motion } from "framer-motion";
 
-export default function TitleText({text, bgText}) {
+export default function TitleText({text, bgText, isStay}) {
   return (
     <div className="relative overflow-hidden pb-10">
       <h2 className="mb-5 text-center text-5xl font-bold uppercase">{text}</h2>
@@ -18,7 +18,7 @@ export default function TitleText({text, bgText}) {
         />
       </div>
 
-      <MovingText what={bgText} />
+      <MovingText what={bgText} isStay={isStay}/>
     </div>
   );
 }

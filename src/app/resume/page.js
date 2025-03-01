@@ -6,8 +6,8 @@ import MyResume from "@/components/MyResume";
 export default function page() {
   return (
     <PageContainer>
-      <MySkills />
-      <MyResume />
+      <MySkills isStay={true}/>
+      <MyResume isStay={true}/>
     </PageContainer>
   );
 }

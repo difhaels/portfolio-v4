@@ -4,11 +4,11 @@ import Container from "./Container";
 import Section from "./Section";
 import TitleText from "./TitleText";
 
-export default function MyResume() {
+export default function MyResume({isStay}) {
   return (
     <Section what={"section-resume"}>
       <Container>
-        <TitleText text={"my resume"} bgText={"resume"} />
+        <TitleText text={"my resume"} bgText={"resume"} isStay={isStay}/>
 
         <div className="grid gap-6 text-left md:grid-cols-2">
           <div>

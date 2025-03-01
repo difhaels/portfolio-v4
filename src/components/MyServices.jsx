@@ -5,11 +5,11 @@ import { motion } from "framer-motion";
 import TitleText from "./TitleText";
 import Section from "./Section";
 
-export default function MyServices() {
+export default function MyServices({isStay}) {
   return (
     <Section what={"section-service"}>
       <Container>
-        <TitleText text={"my services"} bgText={"SERVICES"} />
+        <TitleText text={"my services"} bgText={"SERVICES"} isStay={isStay}/>
         <div className="grid gap-6 md:grid-cols-3">
           <motion.div
             className="rounded-lg border-2 border-[#72E2AE] bg-[#162033] p-6 transition duration-300 ease-in-out hover:-translate-y-2 hover:scale-105 hover:shadow-[0_0_20px_#72E2AE]"

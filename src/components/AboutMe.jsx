@@ -5,11 +5,11 @@ import Container from "./Container";
 import TitleText from "./TitleText";
 import Section from "./Section";
 
-export default function AboutMe() {
+export default function AboutMe({isStay}) {
   return (
     <Section what={"about-section"}>
       <Container>
-        <TitleText text={"about me"} bgText={"about"}/>
+        <TitleText text={"about me"} bgText={"about"} isStay={isStay}/>
         <div className="grid grid-cols-2 items-center justify-center gap-10">
           {/* Bagian Gambar */}
           <div className="col-span-2 flex justify-center lg:col-span-1 lg:justify-end">

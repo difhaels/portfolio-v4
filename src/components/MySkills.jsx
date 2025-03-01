@@ -20,7 +20,7 @@ import Container from "./Container";
 import Section from "./Section";
 import TitleText from "./TitleText";
 
-export default function MySkills() {
+export default function MySkills({isStay}) {
   const skills = [
     {
       category: "Frontend Development",
@@ -58,7 +58,7 @@ export default function MySkills() {
   return (
     <Section what={"section-skills"}>
       <Container>
-        <TitleText text={"my skills"} bgText={"skills"} />
+        <TitleText text={"my skills"} bgText={"skills"} isStay={isStay} />
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
           {skills.map((skill) => (
             <motion.div

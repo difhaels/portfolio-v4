@@ -3,11 +3,11 @@ import Container from "./Container";
 import Section from "./Section";
 import TitleText from "./TitleText";
 
-export default function ClientReviews() {
+export default function ClientReviews({isStay}) {
   return (
     <Section className="section-client">
       <Container>
-        <TitleText text={"client reviews"} bgText={"reviews"} />
+        <TitleText text={"client reviews"} bgText={"reviews"} isStay={isStay}/>
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           <div className="bg-[#162033] rounded-xl px-7 pb-5 border mb-10">

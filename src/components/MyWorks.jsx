@@ -3,11 +3,11 @@ import { Image, SquareArrowOutUpRight } from "lucide-react";
 import Container from "./Container";
 import TitleText from "./TitleText";
 import Section from "./Section";
-export default function MyWorks() {
+export default function MyWorks({isStay}) {
   return (
     <Section what={"section-works"}>
       <Container>
-        <TitleText text={"my works"} bgText={"works"} />
+        <TitleText text={"my works"} bgText={"works"} isStay={isStay}/>
 
         <div className="grid gap-6 md:grid-cols-3">
           <div className="group rounded-lg bg-[#162033] p-5 shadow-lg">

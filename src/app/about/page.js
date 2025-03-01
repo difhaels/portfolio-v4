@@ -7,9 +7,9 @@ import React from "react";
 export default function page() {
   return (
     <PageContainer>
-      <AboutMe />
-      <MyServices />
-      <ClientReviews />
+      <AboutMe isStay={true}/>
+      <MyServices isStay={true} />
+      <ClientReviews isStay={true} />
     </PageContainer>
   );
 }
