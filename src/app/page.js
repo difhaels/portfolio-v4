@@ -11,6 +11,8 @@ import ContactUs from "@/components/ContactUs";
 import Footer from "@/components/Footer";
 import Up from "@/components/Up";
 import { useRef } from "react";
+import { AnimatePresence } from "framer-motion";
+import PageTransition from "@/components/PageTransition";
 
 export default function Home() {
   const contactRef = useRef(null);
@@ -20,6 +22,9 @@ export default function Home() {
   };
   return (
     <div>
+      <AnimatePresence>
+        <PageTransition />
+      </AnimatePresence>
       <Navbar scrollToContact={scrollToContact} />
       <HeroSection />
       <AboutMe />
