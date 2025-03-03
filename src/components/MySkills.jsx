@@ -14,23 +14,31 @@ import {
   SiRedux, 
   SiTypescript, 
   SiSass, 
-  SiJsonwebtokens 
+  SiJsonwebtokens , SiBootstrap
 } from "react-icons/si";
 import Container from "./Container";
 import Section from "./Section";
 import TitleText from "./TitleText";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function MySkills({isStay}) {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true }); 
+  }, []);
+
   const skills = [
     {
       category: "Frontend Development",
       items: [
         { name: "React.js", icon: <FaReact className="text-sky-400" /> },
-        { name: "Vue.js", icon: <FaVuejs className="text-green-400" /> },
         { name: "Next.js", icon: <SiNextdotjs className="text-white" /> },
-        { name: "Redux", icon: <SiRedux className="text-purple-400" /> },
-        { name: "TypeScript", icon: <SiTypescript className="text-blue-400" /> },
         { name: "Tailwind CSS", icon: <SiTailwindcss className="text-cyan-400" /> },
+        { name: "Bootstrap", icon: <SiBootstrap className="text-purple-400" /> },
+        { name: "Redux", icon: <SiRedux className="text-purple-400" /> },
+        { name: "Vue.js", icon: <FaVuejs className="text-green-400" /> },
+        { name: "TypeScript", icon: <SiTypescript className="text-blue-400" /> },
         { name: "Sass", icon: <SiSass className="text-pink-500" /> },
       ],
     },
@@ -39,16 +47,16 @@ export default function MySkills({isStay}) {
       items: [
         { name: "Node.js", icon: <FaNodeJs className="text-green-400" /> },
         { name: "Express.js", icon: <SiExpress className="text-white" /> },
+        { name: "JWT", icon: <SiJsonwebtokens className="text-white" /> },
         { name: "PHP", icon: <FaPhp className="text-blue-500" /> },
         { name: "Laravel", icon: <SiLaravel className="text-red-500" /> },
-        { name: "JWT", icon: <SiJsonwebtokens className="text-white" /> },
       ],
     },
     {
       category: "Database & Storage",
       items: [
-        { name: "MySQL", icon: <SiMysql className="text-blue-500" /> },
         { name: "MongoDB", icon: <SiMongodb className="text-green-500" /> },
+        { name: "MySQL", icon: <SiMysql className="text-blue-500" /> },
         { name: "Firebase", icon: <SiFirebase className="text-yellow-400" /> },
         { name: "Cloudinary", icon: <SiCloudinary className="text-gray-400" /> },
       ],
@@ -72,10 +80,10 @@ export default function MySkills({isStay}) {
               <h3 className="mb-6 text-xl font-medium text-gray-100">
                 {skill.category}
               </h3>
-              <div className="space-y-3">
+              <div className="space-y-3" >
                 {skill.items.map((item, index) => (
                   <div
-                    key={index}
+                    key={index} data-aos="zoom-in"
                     className="flex items-center gap-4 rounded-lg bg-[#1F2937] p-3"
                   >
                     <span className="text-3xl">{item.icon}</span>

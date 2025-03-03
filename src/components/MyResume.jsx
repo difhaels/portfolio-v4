@@ -3,8 +3,14 @@ import { Book, BriefcaseBusiness } from "lucide-react";
 import Container from "./Container";
 import Section from "./Section";
 import TitleText from "./TitleText";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function MyResume({isStay}) {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true }); 
+  }, []);
   return (
     <Section what={"section-resume"}>
       <Container>
@@ -18,8 +24,8 @@ export default function MyResume({isStay}) {
                 Educational Qualification
               </h3>
             </div>
-            <ol className="relative border-s border-gray-700">
-              <li className="mb-10 ms-4">
+            <ol data-aos="zoom-in" className="relative border-s border-gray-700">
+              <li  className="mb-10 ms-4">
                 <div className="absolute -start-1.5 mt-1.5 h-3 w-3 rounded-full border border-gray-900 bg-gray-700"></div>
                 <time className="mb-1 text-sm leading-none text-gray-500">
                   2019-2022
@@ -33,7 +39,7 @@ export default function MyResume({isStay}) {
                   Network Engineering at SMKN 1 Cileungsi.
                 </p>
               </li>
-              <li className="mb-10 ms-4">
+              <li  className="mb-10 ms-4">
                 <div className="absolute -start-1.5 mt-1.5 h-3 w-3 rounded-full border border-gray-900 bg-gray-700"></div>
                 <time className="mb-1 text-sm leading-none text-gray-500">
                   2022-Present
@@ -49,7 +55,7 @@ export default function MyResume({isStay}) {
                   at Universitas Nasional.
                 </p>
               </li>
-              <li className="mb-10 ms-4">
+              <li  className="mb-10 ms-4">
                 <div className="absolute -start-1.5 mt-1.5 h-3 w-3 rounded-full border border-gray-900 bg-gray-700"></div>
                 <time className="mb-1 text-sm leading-none text-gray-500">
                   2021-Present
@@ -70,8 +76,8 @@ export default function MyResume({isStay}) {
               <BriefcaseBusiness className="text-[#72E2AE]"/>
               <h3 className="text-2xl font-semibold">Working Experience</h3>
             </div>
-            <ol className="relative border-s border-gray-700">
-              <li className="mb-10 ms-4">
+            <ol data-aos="zoom-in" className="relative border-s border-gray-700">
+              <li  className="mb-10 ms-4">
                 <div className="absolute -start-1.5 mt-1.5 h-3 w-3 rounded-full border border-gray-900 bg-gray-700"></div>
                 <time className="mb-1 text-sm leading-none text-gray-500">
                   2021-Present
@@ -85,7 +91,7 @@ export default function MyResume({isStay}) {
                   designing logos, and other IT-related tasks.
                 </p>
               </li>
-              <li className="mb-10 ms-4">
+              <li  className="mb-10 ms-4">
                 <div className="absolute -start-1.5 mt-1.5 h-3 w-3 rounded-full border border-gray-900 bg-gray-700"></div>
                 <time className="mb-1 text-sm leading-none text-gray-500">
                   2024-Present

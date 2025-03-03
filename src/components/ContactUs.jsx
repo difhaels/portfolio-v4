@@ -3,8 +3,14 @@ import { Mail, MapPin, Phone } from "lucide-react";
 import Container from "./Container";
 import Section from "./Section";
 import TitleText from "./TitleText";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function ContactUs({isStay}) {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
   return (
     <Section what="section-contact pb-20">
       <Container>
@@ -19,7 +25,7 @@ export default function ContactUs({isStay}) {
             </p>
             <div className="my-6 h-1 w-20 rounded-xl bg-[#72E2AE] opacity-30"></div>
             <div className="flex flex-col gap-5">
-              <div className="flex gap-3 rounded-lg border border-gray-800 bg-[#162033] p-5">
+              <div data-aos="zoom-in" className="flex gap-3 rounded-lg border border-gray-800 bg-[#162033] p-5">
                 <div className="rounded-full bg-[#72E2AE] bg-opacity-25 p-4 text-[#72E2AE] h-fit">
                   <Phone />
                 </div>
@@ -30,7 +36,7 @@ export default function ContactUs({isStay}) {
                   <h1 className="text-gray-400">+62 895 3373 05533</h1>
                 </div>
               </div>
-              <div className="flex gap-3 rounded-lg border border-gray-800 bg-[#162033] p-5">
+              <div data-aos="zoom-in" className="flex gap-3 rounded-lg border border-gray-800 bg-[#162033] p-5">
                 <div className="rounded-full bg-[#72E2AE] bg-opacity-25 p-4 text-[#72E2AE] h-fit">
                 <Mail />
                 </div>
@@ -41,7 +47,7 @@ export default function ContactUs({isStay}) {
                   <h1 className="text-gray-400">agungsaputradifh@gmail.com</h1>
                 </div>
               </div>
-              <div className="flex gap-3 rounded-lg border border-gray-800 bg-[#162033] p-5">
+              <div data-aos="zoom-in" className="flex gap-3 rounded-lg border border-gray-800 bg-[#162033] p-5">
                 <div className="rounded-full bg-[#72E2AE] bg-opacity-25 p-4 text-[#72E2AE] h-fit">
                   <MapPin />
                 </div>
@@ -49,17 +55,17 @@ export default function ContactUs({isStay}) {
                   <h1 className="mb-1 text-lg font-semibold">
                   Contact address
                   </h1>
-                  <h1 className="text-gray-400">Jl. Telkom, Gg. Tangkil II, No 257, RT1/5 </h1>
+                  <h1 className="text-gray-400">Mustika Jaya, Kota Bekasi 17156</h1>
                 </div>
               </div>
             </div>
           </div>
-          <form className="mx-auto w-full h-fit rounded-lg border border-gray-800 bg-[#162033] p-6 text-left shadow-lg">
+          <form data-aos="zoom-in" className="mx-auto w-full h-fit rounded-lg border border-gray-800 bg-[#162033] p-6 text-left shadow-lg">
             <div className="mb-4">
               <label className="mb-2 block text-gray-300" htmlFor="name">
                 Name
               </label>
-              <input
+              <input 
                 id="name"
                 type="text"
                 className="w-full rounded border border-gray-600 bg-[#1A1F2B] p-3 text-white focus:border-[#72E2AE] focus:outline-none"
@@ -71,11 +77,12 @@ export default function ContactUs({isStay}) {
               <label className="mb-2 block text-gray-300" htmlFor="email">
                 Email
               </label>
-              <input
+              <input 
                 id="email"
                 type="email"
                 className="w-full rounded border border-gray-600 bg-[#1A1F2B] p-3 text-white focus:border-[#72E2AE] focus:outline-none"
                 placeholder="Your Email"
+                  autoComplete="off"
               />
             </div>
 

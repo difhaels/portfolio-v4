@@ -21,25 +21,27 @@ export default function Navbar({ scrollToContact }) {
     <section className="w-full">
       <nav className="absolute left-1/2 top-0 z-50 flex w-full max-w-7xl -translate-x-1/2 items-center justify-between px-6 py-4 text-white">
         {/* Logo */}
-        <img src="/logo.svg" alt="logo" className="h-16 rounded-full p-2" />
+        <img src="/logo.svg" alt="logo" className="h-16 p-2" />
 
         {/* Navigation Links (Desktop) */}
         <ul className="hidden space-x-10 text-sm font-semibold uppercase sm:flex">
-          {["Home", "About", "Resume", "Works", "Contact"].map((item, index) => (
-            <li key={item} className="group relative">
-              <Link href={item === "Home" ? "/" : `/${item.toLowerCase()}`}>
-                <span className="text-[#72E2AE]">{`0${index + 1}. `}</span>
-                {item}
-                <span className="absolute -bottom-1 left-0 h-[1px] w-0 bg-[#72E2AE] transition-all duration-300 group-hover:w-full"></span>
-              </Link>
-            </li>
-          ))}
+          {["Home", "About", "Resume", "Works", "Contact"].map(
+            (item, index) => (
+              <li key={item} className="group relative">
+                <Link href={item === "Home" ? "/" : `/${item.toLowerCase()}`}>
+                  <span className="text-[#72E2AE]">{`0${index + 1}. `}</span>
+                  {item}
+                  <span className="absolute -bottom-1 left-0 h-[1px] w-0 bg-[#72E2AE] transition-all duration-300 group-hover:w-full"></span>
+                </Link>
+              </li>
+            ),
+          )}
         </ul>
 
         {/* Hire Me Button (Hanya di Desktop) */}
         <button
           onClick={scrollToContact}
-          className="hidden sm:inline-block group relative h-10 w-24 overflow-hidden rounded-sm px-4 py-2 uppercase text-slate-900"
+          className="group relative hidden h-10 w-24 overflow-hidden rounded-sm px-4 py-2 uppercase text-slate-900 sm:inline-block"
         >
           <span className="front absolute inset-0 flex items-center justify-center bg-[#72E2AE] text-slate-900 transition-all duration-500 group-hover:-translate-y-full">
             Hire Me
@@ -52,7 +54,7 @@ export default function Navbar({ scrollToContact }) {
         {/* Hamburger Menu Button (Mobile) */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="sm:hidden z-50 p-2"
+          className="z-50 p-2 sm:hidden"
         >
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
@@ -69,21 +71,23 @@ export default function Navbar({ scrollToContact }) {
           <img src="/logo.svg" alt="logo" className="h-14 p-1" />
 
           <ul className="hidden space-x-10 text-sm font-semibold uppercase sm:flex">
-            {["Home", "About", "Resume", "Works", "Contact"].map((item, index) => (
-              <li key={item} className="group relative">
-                <Link href={item === "Home" ? "/" : `/${item.toLowerCase()}`}>
-                  <span className="text-[#72E2AE]">{`0${index + 1}. `}</span>
-                  {item}
-                  <span className="absolute -bottom-1 left-0 h-[1px] w-0 bg-[#72E2AE] transition-all duration-300 group-hover:w-full"></span>
-                </Link>
-              </li>
-            ))}
+            {["Home", "About", "Resume", "Works", "Contact"].map(
+              (item, index) => (
+                <li key={item} className="group relative">
+                  <Link href={item === "Home" ? "/" : `/${item.toLowerCase()}`}>
+                    <span className="text-[#72E2AE]">{`0${index + 1}. `}</span>
+                    {item}
+                    <span className="absolute -bottom-1 left-0 h-[1px] w-0 bg-[#72E2AE] transition-all duration-300 group-hover:w-full"></span>
+                  </Link>
+                </li>
+              ),
+            )}
           </ul>
 
           {/* Hire Me Button (Hanya di Desktop) */}
           <button
             onClick={scrollToContact}
-            className="hidden sm:inline-block group relative h-10 w-24 overflow-hidden rounded-sm px-4 py-2 uppercase text-slate-900"
+            className="group relative hidden h-10 w-24 overflow-hidden rounded-sm px-4 py-2 uppercase text-slate-900 sm:inline-block"
           >
             <span className="front absolute inset-0 flex items-center justify-center bg-[#72E2AE] text-slate-900 transition-all duration-500 group-hover:-translate-y-full">
               Hire Me
@@ -91,6 +95,14 @@ export default function Navbar({ scrollToContact }) {
             <span className="back absolute inset-0 flex translate-y-full items-center justify-center bg-white text-slate-900 transition-all duration-500 group-hover:translate-y-0">
               Hire Me
             </span>
+          </button>
+
+          {/* Hamburger Menu Button (Mobile) */}
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="z-50 p-2 sm:hidden"
+          >
+            {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
         </div>
       </motion.nav>
@@ -109,7 +121,7 @@ export default function Navbar({ scrollToContact }) {
             key={item}
             href={item === "Home" ? "/" : `/${item.toLowerCase()}`}
             onClick={() => setIsOpen(false)}
-            className="block font-semibold text-2xl"
+            className="block text-2xl font-semibold"
           >
             <span className="text-[#72E2AE]">{`0${index + 1}. `}</span>
             {item}
