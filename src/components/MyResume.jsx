@@ -84,11 +84,10 @@ export default function MyResume({isStay}) {
                 </time>
                 <h1 className="text-lg font-semibold text-[#72E2AE]">IT Support</h1>
                 <h1 className="mb-2 text-base">
-                  WindowHome, window frame manufacturing
+                  WindowHome, Aluminium Fabrication & Manufacturing
                 </h1>
                 <p className="mb-4 text-base text-gray-400">
-                  Responsible for drafting agreements, listing items and prices,
-                  designing logos, and other IT-related tasks.
+                Responsible for developing and managing business landing pages, ensuring a strong online presence for WindowHome. Tasks include drafting agreements, listing items and prices, designing logos, and handling various IT-related responsibilities.
                 </p>
               </li>
               <li  className="mb-10 ms-4">
