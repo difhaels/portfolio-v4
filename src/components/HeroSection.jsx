@@ -26,7 +26,7 @@ export default function HeroSection() {
           <div className="relative z-10 h-[156px] w-[156px] overflow-hidden rounded-full border-[6px] border-[#72E2AE]/20 sm:h-[166px] sm:w-[166px]">
             <Image
               src="/anime.jpeg"
-              alt="Agung Saputra"
+              alt="Agung"
               fill
               className="object-cover"
               priority
