@@ -10,7 +10,7 @@ export default function PageContainer({ children }) {
   const [isOpenMiniNavbar, setIsOpenMiniNavbar] = useState(false);
 
   return (
-    <div className="">
+    <div className="relative">
       {/* Sidebar */}
       <div className="hidden sm:block">
         <SideNavbar setIsOpenNavbar={setIsOpenNavbar} />

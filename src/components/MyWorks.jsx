@@ -90,7 +90,7 @@ export default function MyWorks({ isStay }) {
                   <img
                     src={project.banner}
                     alt={project.title}
-                    className="h-40 w-full rounded-md object-cover"
+                    className="h-40 w-full object-cover"
                   />
                 </span>
                 <span className="back absolute inset-0 flex h-40 w-full -translate-x-full items-center justify-center gap-3 bg-[#0b111a] bg-opacity-75 backdrop-blur backdrop-filter transition-all duration-500 group-hover:translate-x-0">

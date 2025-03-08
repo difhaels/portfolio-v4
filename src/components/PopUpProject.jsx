@@ -28,7 +28,7 @@ export default function PopUpProject({ images, onClose }) {
           <img
             src={images[currentIndex]}
             alt="Project Image"
-            className="max-h-[80vh] w-auto max-w-full rounded-lg object-contain"
+            className="max-h-[80vh] w-auto max-w-full object-contain"
           />
         </div>
 
