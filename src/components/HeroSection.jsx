@@ -18,7 +18,6 @@ export default function HeroSection() {
       }}
     >
       <div className="mx-auto mt-16 flex max-w-4xl flex-col items-center sm:mt-20">
-        import Image from "next/image";
         <div className="relative mb-10 flex items-center justify-center">
           {/* Border Berputar */}
           <span className="absolute h-[156px] w-[156px] animate-spin rounded-full bg-gradient-to-tr from-[#72E2AE] to-transparent sm:h-[166px] sm:w-[166px]"></span>
