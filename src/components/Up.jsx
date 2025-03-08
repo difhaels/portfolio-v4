@@ -24,7 +24,7 @@ export default function Up() {
       initial={{ opacity: 0, x: 50 }} // Mulai dari bawah & transparan
       animate={isScroll ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }} // Animasi smooth saat muncul/hilang
       transition={{ duration: 0.5 }} // Durasi animasi 0.5 detik
-      className="fixed bottom-3 right-4 z-50 md:bottom-7 md:right-10"
+      className="fixed bottom-3 right-4 z-40 md:bottom-7 md:right-10"
     >
       <a
         onClick={scrollToTop}

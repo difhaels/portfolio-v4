@@ -40,7 +40,7 @@ export default function HeroSection() {
           <h1>Hi, I am</h1>
           <span className="text-[#72E2AE]">
             <Typewriter
-              words={["Agung Saputra", "Full-stack Developer", "Web Designer"]}
+              words={["Agung Saputra", "Full-stack Developer"]}
               loop={0}
               cursor
               cursorStyle="|"

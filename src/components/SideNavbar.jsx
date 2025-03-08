@@ -11,7 +11,7 @@ export default function SideNavbar({setIsOpenNavbar}) {
           className="border-primary relative inline-block h-[60px] w-[60px] overflow-hidden rounded-full border-2 border-[#72E2AE]"
         >
           <img
-            src="/agung.png"
+            src="/anime.jpeg"
             alt="Profile"
             className="h-full w-full object-cover"
           />
