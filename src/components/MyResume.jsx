@@ -82,7 +82,7 @@ export default function MyResume({isStay}) {
                 <time className="mb-1 text-sm leading-none text-gray-500">
                   2021-Present
                 </time>
-                <h1 className="text-lg font-semibold text-[#72E2AE]">IT Support</h1>
+                <h1 className="text-lg font-semibold text-[#72E2AE]">Web Developer</h1>
                 <h1 className="mb-2 text-base">
                   WindowHome, Aluminium Fabrication & Manufacturing
                 </h1>

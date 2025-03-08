@@ -100,7 +100,7 @@ export default function AboutMe({isStay}) {
                 </li>
               </ul>
               <a
-                href="/contact" data-aos="zoom-in"
+                href="/resume-agung-saputra.pdf" target="_blank" data-aos="zoom-in"
                 className="group relative inline-block h-10 w-48 overflow-hidden rounded-sm uppercase text-slate-900"
               >
                 <span className="front absolute inset-0 flex items-center justify-center bg-[#72E2AE] text-slate-900 transition-all duration-500 group-hover:-translate-y-full">
