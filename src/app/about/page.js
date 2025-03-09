@@ -18,3 +18,20 @@ export default function page() {
     </PageContainer>
   );
 }
+
+export const metadata = {
+  title: "Tentang Agung Saputra",
+  description: "Pelajari lebih lanjut tentang Agung Saputra dan perjalanannya di dunia teknologi.",
+  openGraph: {
+    title: "Tentang Agung Saputra",
+    description: "Pelajari lebih lanjut tentang Agung Saputra dan perjalanannya di dunia teknologi.",
+    url: "https://difhdev.site/about",
+    images: [
+      {
+        url: "https://difhdev.site/about-og.jpg",
+        width: 1280,
+        height: 1014,
+      },
+    ],
+  },
+};
