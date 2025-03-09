@@ -14,7 +14,11 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Agung Saputra - Portfolio",
   description: "Portofolio resmi Agung Saputra, showcasing projects and skills.",
-  icons: "/logo.svg",
+  icons: {
+    icon: "/favicon.ico", // Untuk favicon utama
+    shortcut: "/favicon.ico", // Untuk browser yang butuh shortcut icon
+    apple: "/apple-touch-icon.png", // Untuk iOS devices
+  },
   openGraph: {
     title: "Agung Saputra - Portfolio",
     description: "Portofolio resmi Agung Saputra, showcasing projects and skills.",
@@ -40,6 +44,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
