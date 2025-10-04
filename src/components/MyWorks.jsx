@@ -1,5 +1,6 @@
 "use client";
-import { Image } from "lucide-react";
+import { Image, Link } from "lucide-react";
+
 import Container from "./Container";
 import TitleText from "./TitleText";
 import Section from "./Section";
@@ -94,12 +95,20 @@ export default function MyWorks({ isStay }) {
                   />
                 </span>
                 <span className="back absolute inset-0 flex h-40 w-full -translate-x-full items-center justify-center gap-3 bg-[#0b111a] bg-opacity-75 backdrop-blur backdrop-filter transition-all duration-500 group-hover:translate-x-0">
-                  <button
-                    className="rounded-full bg-[#72E2AE] p-3"
-                    onClick={() => setSelectedImages(project.images)}
-                  >
-                    <Image className="h-6 w-6 text-gray-700" />
-                  </button>
+                  <div className="flex gap-4">
+                    <a href=""
+                      className="rounded-full bg-[#72E2AE] p-3 hover:scale-105"
+                      onClick={() => setSelectedImages(project.images)}
+                    >
+                      <Link className="h-6 w-6 text-gray-700" />
+                    </a>
+                    <button
+                      className="rounded-full bg-[#72E2AE] p-3 hover:scale-105"
+                      onClick={() => setSelectedImages(project.images)}
+                    >
+                      <Image className="h-6 w-6 text-gray-700" />
+                    </button>
+                  </div>
                 </span>
               </div>
               <h3 className="pt-2 text-left text-xl font-semibold">
@@ -111,9 +120,13 @@ export default function MyWorks({ isStay }) {
             </div>
           ))}
         </div>
-        {selectedImages && <PopUpProject images={selectedImages} onClose={() => setSelectedImages(null)} />}
+        {selectedImages && (
+          <PopUpProject
+            images={selectedImages}
+            onClose={() => setSelectedImages(null)}
+          />
+        )}
       </Container>
     </Section>
   );
 }
-
