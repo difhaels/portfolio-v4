@@ -9,70 +9,15 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import PopUpProject from "./PopUpProject";
 
-const projects = [
-  {
-    title: "Business Landing Page",
-    description:
-      "A landing page for business promotion using Next.js and MongoDB.",
-    banner: "/blp/banner.png",
-    images: [
-      "/blp/img1.png",
-      "/blp/img2.png",
-      "/blp/img3.png",
-      "/blp/img4.png",
-      "/blp/img5.png",
-    ],
-  },
-  {
-    title: "DeterminiX CMS",
-    description:
-      "A content management system for managing showcases and activities.",
-    banner: "/dc/banner.png",
-    images: ["/dc/img1.png", "/dc/img2.png", "/dc/img3.png", "/dc/img4.png"],
-  },
-  {
-    title: "DeterminiX Organization",
-    description: "An organizational website built with React and Tailwind.",
-    banner: "/do/banner.png",
-    images: [
-      "/do/img1.png",
-      "/do/img2.png",
-      "/do/img3.png",
-      "/do/img4.png",
-      "/do/img5.png",
-    ],
-  },
-  {
-    title: "Anonymous Chat",
-    description:
-      "A real-time anonymous chat application using Vue and Tailwind.",
-    banner: "/ac/banner.png",
-    images: ["/ac/img1.png", "/ac/img2.png", "/ac/img3.png"],
-  },
-  {
-    title: "Netflix Clone",
-    description: "A streaming platform inspired by Netflix, built with MERN.",
-    banner: "/nc/banner.png",
-    images: ["/nc/img1.png", "/nc/img2.png", "/nc/img3.png"],
-  },
-  {
-    title: "Web Top-Up",
-    description: "A digital top-up platform powered by Laravel and Bootstrap.",
-    banner: "/wtu/banner.png",
-    images: [
-      "/wtu/img1.png",
-      "/wtu/img2.png",
-      "/wtu/img3.png",
-      "/wtu/img4.png",
-    ],
-  },
-];
+import projects from "@/data/projects.json";
+
+
 
 export default function MyWorks({ isStay }) {
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
   }, []);
-
+  
   const [selectedImages, setSelectedImages] = useState(null);
 
   return (
