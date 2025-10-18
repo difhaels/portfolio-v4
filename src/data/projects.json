@@ -4,6 +4,7 @@
     "description": "A landing page for business promotion using Next.js and MongoDB.",
     "banner": "/blp/banner.png",
     "category": "web",
+    "link": "",
     "images": [
       "/blp/img1.png",
       "/blp/img2.png",
@@ -17,6 +18,7 @@
     "description": "A content management system for managing showcases and activities.",
     "banner": "/dc/banner.png",
     "category": "web",
+    "link": "",
     "images": [
       "/dc/img1.png",
       "/dc/img2.png",
@@ -29,6 +31,7 @@
     "description": "An organizational website built with React and Tailwind.",
     "banner": "/do/banner.png",
     "category": "web",
+    "link": "",
     "images": [
       "/do/img1.png",
       "/do/img2.png",
@@ -42,6 +45,7 @@
     "description": "A real-time anonymous chat application using Vue and Tailwind.",
     "banner": "/ac/banner.png",
     "category": "web",
+    "link": "",
     "images": [
       "/ac/img1.png",
       "/ac/img2.png",
@@ -53,6 +57,7 @@
     "description": "A streaming platform inspired by Netflix, built with MERN.",
     "banner": "/nc/banner.png",
     "category": "web",
+    "link": "netflix.com",
     "images": [
       "/nc/img1.png",
       "/nc/img2.png",
@@ -64,6 +69,7 @@
     "description": "A digital top-up platform powered by Laravel and Bootstrap.",
     "banner": "/wtu/banner.png",
     "category": "web",
+    "link": "",
     "images": [
       "/wtu/img1.png",
       "/wtu/img2.png",
