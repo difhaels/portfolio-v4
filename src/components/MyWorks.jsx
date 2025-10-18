@@ -11,8 +11,6 @@ import PopUpProject from "./PopUpProject";
 
 import projects from "@/data/projects.json";
 
-
-
 export default function MyWorks({ isStay }) {
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
