@@ -39,7 +39,7 @@ export default function MyWorks({ isStay }) {
                 </span>
                 <span className="back absolute inset-0 flex h-40 w-full -translate-x-full items-center justify-center gap-3 bg-[#0b111a] bg-opacity-75 backdrop-blur backdrop-filter transition-all duration-500 group-hover:translate-x-0">
                   <div className="flex gap-4">
-                    <a href={project.link? project.link:""}
+                    <a href={project.link? project.link:"/notfound"}
                       className="rounded-full bg-[#72E2AE] p-3 hover:scale-105"
                     >
                       <Link className="h-6 w-6 text-gray-700" />

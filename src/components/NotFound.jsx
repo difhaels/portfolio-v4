@@ -16,18 +16,18 @@ export default function NotFound() {
   return (
     <Section what="section-notfound pb-20">
       <Container>
-        <div className="flex-col text-center mt-24">
+        <div className="flex-col text-center sm:mt-24">
           <h1 className="mb-1 text-xl font-semibold">
             Sorry, this page isn’t available yet.
           </h1>
-          <p className="mx-20 text-lg text-gray-400">
+          <p className="mx-4 sm:mx-20 text-lg text-gray-400">
             The project might still be under maintenance or not hosted at the
-            moment. In the meantime, feel free to check out the preview images
-            or explore other available projects below.
+            moment. In the meantime, feel free to check out the preview images (<Image className="inline h-6 w-6 text-gray-500" />) at <a href="/works" className="underline text-gray-300">MyWorks </a>
+             or explore other available live preview projects below.
           </p>
           <div className="mx-auto my-6 h-1 w-20 rounded-xl bg-[#72E2AE] opacity-30"></div>
           <h1 className="mb-8 text-xl font-semibold">
-            available projects
+            Available Projects
           </h1>
           <div
             className={`grid gap-6 pb-5 ${
