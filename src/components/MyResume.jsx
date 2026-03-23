@@ -33,7 +33,7 @@ export default function MyResume({isStay}) {
                 <h1 className="text-lg font-semibold text-[#72E2AE]">
                   Computer network Engineering
                 </h1>
-                <h1 className="mb-2 text-base">SMKN 1 Cileungsi, Indonesian</h1>
+                <h1 className="mb-2 text-base">SMKN 1 Cileungsi, Indonesia</h1>
                 <p className="mb-4 text-base text-gray-400">
                   Completed vocational high school majoring in Computer and
                   Network Engineering at SMKN 1 Cileungsi.
@@ -48,7 +48,7 @@ export default function MyResume({isStay}) {
                   Information Systems
                 </h1>
                 <h1 className="mb-2 text-base">
-                  Universitas Nasional, Indonesian
+                  Universitas Nasional, Indonesia
                 </h1>
                 <p className="mb-4 text-base text-gray-400">
                   Currently pursuing a Bachelor's degree in Information Systems
