@@ -23,7 +23,7 @@ export default function NotFound() {
           <p className="mx-4 sm:mx-20 text-lg text-gray-400">
             The project might still be under maintenance or not hosted at the
             moment. In the meantime, feel free to check out the preview images (<Image className="inline h-6 w-6 text-gray-500" />) at <a href="/works" className="underline text-gray-300">MyWorks </a>
-             or explore other available live preview projects below.
+            or explore other available live preview projects below.
           </p>
           <div className="mx-auto my-6 h-1 w-20 rounded-xl bg-[#72E2AE] opacity-30"></div>
           <h1 className="mb-8 text-xl font-semibold">
