@@ -103,6 +103,19 @@ export default function MyResume({isStay}) {
                   coding, and solving various programming-related issues.
                 </p>
               </li>
+              <li  className="mb-10 ms-4">
+                <div className="absolute -start-1.5 mt-1.5 h-3 w-3 rounded-full border border-gray-900 bg-gray-700"></div>
+                <time className="mb-1 text-sm leading-none text-gray-500">
+                  2025
+                </time>
+                <h1 className="text-lg font-semibold text-[#72E2AE]">Junior Web Developer</h1>
+                <h1 className="mb-2 text-base">
+                  Arsip Nasional Republik Indonesia (ANRI)
+                </h1>
+                <p className="mb-4 text-base text-gray-400">
+                Responsible for maintaining and optimizing legacy web applications built with Laravel. Tasks include performing bug fixes, updating system features, and ensuring the stability of internal platforms through routine maintenance and technical troubleshooting.
+                </p>
+              </li>
             </ol>
           </div>
         </div>
